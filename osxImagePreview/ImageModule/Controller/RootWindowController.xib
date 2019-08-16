@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RootWindowController">
+            <connections>
+                <outlet property="scrollView" destination="opm-BR-cQG" id="kCj-Lc-W6f"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="600" height="400"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <value key="minSize" type="size" width="600" height="400"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="DYY-N0-K0c">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                        <subviews>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opm-BR-cQG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                                <clipView key="contentView" id="CmZ-j3-Bq8">
+                                    <rect key="frame" x="1" y="1" width="598" height="398"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ve7-44-Rcd">
+                                            <rect key="frame" x="0.0" y="0.0" width="583" height="383"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="oWd-2L-H9w">
+                                    <rect key="frame" x="1" y="383" width="598" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="6Wr-lD-76N">
+                                    <rect key="frame" x="583" y="1" width="16" height="398"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="opm-BR-cQG" firstAttribute="centerX" secondItem="DYY-N0-K0c" secondAttribute="centerX" id="R5S-QR-RNz"/>
+                            <constraint firstItem="opm-BR-cQG" firstAttribute="height" secondItem="DYY-N0-K0c" secondAttribute="height" id="leg-Uy-xEI"/>
+                            <constraint firstItem="opm-BR-cQG" firstAttribute="width" secondItem="DYY-N0-K0c" secondAttribute="width" id="qxZ-jg-KVZ"/>
+                            <constraint firstItem="opm-BR-cQG" firstAttribute="centerY" secondItem="DYY-N0-K0c" secondAttribute="centerY" id="vnW-w0-jDB"/>
+                        </constraints>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DYY-N0-K0c" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="BKo-ra-OKS"/>
+                    <constraint firstAttribute="bottom" secondItem="DYY-N0-K0c" secondAttribute="bottom" id="HdZ-Dy-EtZ"/>
+                    <constraint firstAttribute="trailing" secondItem="DYY-N0-K0c" secondAttribute="trailing" id="kuq-EY-5aK"/>
+                    <constraint firstItem="DYY-N0-K0c" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="vtT-NX-emL"/>
+                </constraints>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="E62DD46C-67AA-45AB-AC90-F4F7DC06E866" allowsUserCustomization="NO" showsBaselineSeparator="NO" displayMode="iconOnly" sizeMode="small" id="9b3-qK-WQs">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="5R2-gY-GNO"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="PyQ-YA-TUK"/>
+                    <toolbarItem implicitItemIdentifier="05D78961-8A42-44A1-8D67-FC363AAC7D02" label="save" paletteLabel="save" image="baocuntupian" id="cPO-vL-YR3" userLabel="save">
+                        <size key="minSize" width="100" height="100"/>
+                        <size key="maxSize" width="100" height="100"/>
+                        <connections>
+                            <action selector="saveImage:" target="-2" id="C3S-BR-g0P"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="001A775F-EAF0-4BE2-89DD-B885934E87A9" label="zoomOut" paletteLabel="zoomOut" tag="-1" image="suoxiao" id="rdl-TE-Fkq" userLabel="zoomOut">
+                        <size key="minSize" width="200" height="200"/>
+                        <size key="maxSize" width="200" height="200"/>
+                        <connections>
+                            <action selector="zoomOutImage:" target="-2" id="cyo-nY-ATC"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="0B25D828-3E58-4E5F-AB0D-FA6E3E38C27E" label="zoomIn" paletteLabel="zoomIn" tag="-1" image="fangda" id="49y-WB-ecy" userLabel="zoomIn">
+                        <size key="minSize" width="200" height="200"/>
+                        <size key="maxSize" width="200" height="200"/>
+                        <connections>
+                            <action selector="zoomInImage:" target="-2" id="OBx-Rl-gC5"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="8B8E7233-B917-45D1-8573-6710322A7D7A" label="screenshoot" paletteLabel="screenshoot" tag="-1" image="jietu" id="mUE-lb-PW7" userLabel="screenshoot">
+                        <size key="minSize" width="200" height="200"/>
+                        <size key="maxSize" width="200" height="200"/>
+                        <connections>
+                            <action selector="imageScreenshoot:" target="-2" id="aWK-Oh-i7z"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="3B80677E-BEF4-4C75-A386-BEAEA5DFF3FD" label="rotate" paletteLabel="rotate" tag="-1" image="xuanzhuan" id="iiJ-jd-nep" userLabel="rotate">
+                        <size key="minSize" width="200" height="200"/>
+                        <size key="maxSize" width="200" height="200"/>
+                        <connections>
+                            <action selector="rotateImage:" target="-2" id="hCU-6T-OLz"/>
+                        </connections>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="cPO-vL-YR3"/>
+                    <toolbarItem reference="rdl-TE-Fkq"/>
+                    <toolbarItem reference="49y-WB-ecy"/>
+                    <toolbarItem reference="mUE-lb-PW7"/>
+                    <toolbarItem reference="iiJ-jd-nep"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="212"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="baocuntupian" width="200" height="200"/>
+        <image name="fangda" width="200" height="200"/>
+        <image name="jietu" width="200" height="200"/>
+        <image name="suoxiao" width="200" height="200"/>
+        <image name="xuanzhuan" width="200" height="200"/>
+    </resources>
+</document>

@@ -22,10 +22,14 @@
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>是否允许访问媒体库以方便您保存文件？</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Boris. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>是否允许访问图库以保存您喜欢的图片?</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
